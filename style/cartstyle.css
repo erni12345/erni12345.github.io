@@ -1,0 +1,378 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #2c52b3;
+    padding: 20px;
+    width: 100vw;
+    margin-bottom: 0;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fb2f38;
+  }
+  
+  header nav {
+    margin-left: auto;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff867;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #e6e2a3;
+  }
+
+  
+  /* Base styles */
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+h1{
+    font-weight: bold;
+    color: #2c52b3;
+    text-align: center;
+    font-size: 25px;
+}
+  
+  body {
+    position: relative;
+    font-family: sans-serif;
+    color: #5a5b6d;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .main-box{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    grid-template-areas: "header header"
+                        "itemsin summary "
+                        "itemsin summary"
+                        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 67.2px 1fr 1fr 56.8px;
+  }
+
+  .items-in{
+    background-color: #ffffff;
+    grid-area: itemsin;
+  }
+
+  .items-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .summary{
+    background-color: #ffffff;
+    grid-area: summary;
+  }
+
+  .header{
+    background-color: #2ffb5b;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: #2c52b3;
+  }
+
+  .footer{
+    background-color: #fff867;
+    grid-area: footer;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .item{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    background-color: #fff;
+    min-height: 200px;
+    align-items: center;
+    min-width:73%;
+    flex-shrink: 0;
+    margin-left: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    object-position: -5px 5px;
+    
+  }
+
+
+  .items-box span.info{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 200px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .text{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#000000
+  }
+
+  .quantity{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .quantity form{
+    display:inline;
+  }
+
+  input{
+    width: 10%;
+    margin: 0;
+    height: 17px;
+    font-size: 10px;
+  }
+
+  div.item{
+    width: 60%;
+  }
+
+  div.desc{
+    margin-top: 5px;
+    font-size: 10px;
+    width: 80%;
+  }
+
+  .btn{
+    font-size: 10px;
+    position: absolute;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: #000000;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+  .btn.trash::before {
+    font-family: fontAwesome;
+    content: "\f1f8\00a0";
+  }
+
+  .btn.trash{
+    background: #f5f4f4; 
+  }
+
+  .btn.trash:hover {
+    background: #eae9e9; 
+  }
+
+  div .price{
+    display: inline;
+    color:#050a15;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 50%;
+  }
+
+  form.group{
+    display: flex;
+    align-items: baseline;
+  }
+
+  div.total{
+    margin-left: 20px;
+    margin-top: 5%;
+    max-width: 70%;
+    min-width: 70%;
+    min-height: 40%;
+    background-color: rgb(246, 245, 245);
+    box-shadow: 1px 2px 5px #ccc;
+  }
+
+  .cost{
+    color:#050a15;
+    font-family:Helvetica, sans-serif;
+    margin-left: 5%;
+  }
+
+  .cost .price2{
+    float: right;
+    margin-right: 8%;
+  }
+
+  .totalcost{
+    margin-top: 10%;
+  }
+
+  .ordersummary{
+    text-align: center;
+    padding-top: 20px;
+    color:#050a15;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  hr.totalline{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    border-top: 1.5px solid #2c52b3;
+    background-color:#2c52b3;
+  }
+
+  .sum{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40%;
+  }
+
+  .price3{
+    display: block;
+    margin-left: 10%;
+  }
+
+  .checkout{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .btn2{
+    position: absolute;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: #f3f0f0;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #2c52b3;
+}
+
+  .btn2:hover {
+    background: #3561d0; 
+  }
+
+  .discount-code{
+    margin-left: 20px;
+    display: block;
+    margin-top: 2%;
+    max-width: 70%;
+    min-width: 70%;
+    min-height: 20%;
+    background-color: rgb(246, 245, 245);
+    box-shadow: 1px 2px 5px #ccc;
+  }
+
+  .code{
+    padding-top: 2%;
+    text-align: center;
+  }
+
+  .input-box{
+    padding-top: 2%;
+    margin-left: 10%;
+  }
+
+  input#cde{
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  button.btncenter{
+    margin-top: 10px;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10%;
+  }
+
+  .scrollable {
+    height: 100%; /* or any value */
+    overflow-y: auto;
+}
+
+
+#bar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#bar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+
+}
+
+#bar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2c52b3;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

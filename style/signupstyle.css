@@ -1,0 +1,214 @@
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #2c52b3;
+    padding: 20px;
+    width: 100vw;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fb2f38;
+  }
+  
+  header nav {
+    margin-left: auto;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff867;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #e6e2a3;
+  }
+
+  
+  /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styles */
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .box-header{
+    padding-top: 20px;
+}
+
+h1{
+    font-weight: bold;
+    color: #2c52b3;
+    text-align: center;
+    font-size: 25px;
+}
+  
+
+  footer {
+    background-color: #fff867;
+    color: #5a5b6d;
+    font-size: 14px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    font-family: sans-serif;
+    color: #5a5b6d;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+  }
+
+
+  .box-registration{
+    max-width: 550px;
+    margin: 30px auto 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    background-color: #fff;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px #ccc;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .box-registration form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+  }
+
+  form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 10px);
+    text-align: center;
+  }
+
+  .user-details .input-box input{
+    height: 30px;
+    width: 85%;
+  }
+
+  form .input-box span.details{
+    display: block;
+    font-weight: bold;
+    color:#2c52b3;
+    font-size: 16px;
+  }
+
+  .input-box input {
+    border: 0.5px solid rgb(75, 78, 86);
+    border-radius: 4px;
+    margin: 4px 0;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .user-gender{
+    text-align: center;
+  }
+
+  .gender-details{
+    padding-right: 10px;
+    justify-items: center;
+    font-weight: bold;
+    color:#2c52b3;
+    font-size: 16px;
+  }
+
+  .buttons{
+    display: flex;
+    justify-items: space-between;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .buttons .category{
+    margin: 0 50px;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    background-color: rgb(98, 92, 92);
+    margin: 0;
+    font: inherit;
+    color: rgb(98, 92, 92);
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid rgb(98, 92, 92);
+    border-radius: 50%;
+    transform: translateY(+0.2em);
+  }
+  
+  input[type="radio"]:checked{
+        background: #4367c3;
+        border-radius: 50%;
+        border: 0.15em solid rgb(98, 92, 92);
+  }
+
+  input[type="radio"]:hover{
+        background: #4367c3;
+        border-radius: 50%;
+        border: 0.15em solid rgb(98, 92, 92);
+        
+    }
+
+  .button{
+        margin: 0 auto;
+        display: block;
+        background: #2c52b3;
+        padding: 4px;
+        width: 50%;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 600;
+        border: 1px solid transparent;
+        border-radius: 21px;
+    }
+
+    .background{
+        background-image: url("gundamblurred.png");
+      }
+
+
+
+
+
+
+
+
+
+

@@ -69,12 +69,11 @@
     font-size: 14px;
     text-align: center;
     clear: both;
-    position: relative;
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 20px;
-
+    margin-top: 10px;
   }
 
   .password{
@@ -113,7 +112,6 @@
     border-radius: 20px;
     box-shadow: 1px 2px 5px #ccc;
     text-align: center;
-    min-width: 400px;
     margin-top: 50px;
 }
 
@@ -196,6 +194,10 @@ a.newlogin {
     content: "\f1a0\00a0";
   }
 
+  .logo a{
+    color: #fb2f38;
+    text-decoration:none;
+  }
 
   .btn.facebook::before {
     font-family: fontAwesome;
@@ -209,16 +211,41 @@ a.newlogin {
 
 /* things that are in login and not in signup */
 
-  .grid{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: repeat(3, 450px);
-    gap: 20px;
-    margin-top: 10px;
-  }
-
   section.registration{
     text-align: center;
   }
+
+  @media (max-width: 800px) {
+
+    .box-authentication {
+      width: 100vw;
+  }
+
+    .history-option{
+      font-size: 14px;
+    }
+  
+    .data-option{
+      font-size: 14px;
+    }
+  
+    .main-box{
+        width: 90%;
+    }
+  
+    .btn{
+        width: 300px;
+    }
+  
+    header nav a {
+      font-size: 12px;
+      margin-left: 5px;
+  }
+  
+  header .logo{
+      font-size:18px;
+  }
+  }
+
 
 

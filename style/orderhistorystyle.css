@@ -1,0 +1,307 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #2c52b3;
+    width: 100vw;
+    padding: 16.2px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fb2f38;
+  }
+  
+  header nav {
+    margin-left: auto;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff867;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .logo a{
+    color: #fb2f38;
+    text-decoration:none;
+  }
+  
+  header nav a:hover {
+    color: #e6e2a3;
+  }
+
+
+h1{
+    font-weight: bold;
+    color: #2c52b3;
+    text-align: center;
+    font-size: 25px;
+}
+  
+  body {
+    position: relative;
+    font-family: sans-serif;
+    color: #5a5b6d;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+  }
+
+  #page-container {
+    height: 100vh;
+  }
+
+  .main-box{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 0.5%;
+  }
+
+  .center-box{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    width: 14vw;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .history-option{
+    display: flex;
+    height: 8vh;
+    width: 14vw;
+    background-color: #2c52b3 ;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .data-option{
+    display: flex;
+    height: 8vh;
+    width: 14vw;
+    background-color: #f1f0f0 ;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .history{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .entry{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    background-color: #fff;
+    min-height: 200px;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-left: 1vw;
+  }
+
+  img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    object-position: -5px 5px;
+  }
+
+  .text{
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#000000
+  }
+
+  .quantity{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  div .price{
+    display: inline;
+    color:#050a15;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    float: right;
+    margin-right: 5%;
+  }
+
+  div.item{
+    width: 60%;
+  }
+
+  div.status{
+    margin-top: 5px;
+    font-size: 14px;
+    width: 80%;
+    font-weight: bold;
+    color:#414243
+  }
+
+  .scrollable {
+    height: 100%; /* or any value */
+    overflow-y: auto;
+}
+
+span.info{
+    width: 100%;
+}
+
+span.delivered{
+    color: rgb(4, 209, 4);
+}
+
+span.cancelled{
+    color: rgb(210, 5, 5);
+}
+
+span.pending{
+    color: #2c52b3;
+}
+
+#bar::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#bar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+
+}
+
+#bar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #2c52b3;
+}
+
+.background{
+    background-image: url("gundamblurred.png");
+  }
+
+  .history-option a:-webkit-any-link {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.data-option a:-webkit-any-link {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
+  .center-box{
+    margin-top: 50px;
+  }
+  .menu{
+    width: 70px;
+}
+.history-option{
+  font-size: 11px;
+  width: 70px;
+}
+
+.data-option{
+  font-size: 11px;
+  width: 70px;
+}
+
+.main-box{
+    width: 90%;
+}
+
+.btn{
+    width: 30%;
+}
+
+header nav a {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.logo{
+  font-size:18px;
+}
+.data{
+    font-size: 14px;
+}
+.text{
+  font-size:10px;
+}
+
+.quantity{
+  font-size:9px;
+}
+
+div.status{
+  font-size: 9px;
+}
+
+img {
+  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  object-position: -5px 5px;
+}
+
+.entry{
+  min-height: 100px;
+  width: 95%;
+}
+
+div .price{
+  font-size: 9px;
+}
+}

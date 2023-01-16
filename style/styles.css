@@ -1,193 +1,241 @@
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Base styles */
-  body {
-    font-family: sans-serif;
-    color: #5a5b6d;
-    background-color: #fff;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    background-color: #2c52b3;
-    padding: 20px;
-  }
-  
-  header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fb2f38;
-  }
-  
-  header nav {
-    margin-left: auto;
-  }
-  
-  header nav a {
-    display: inline-block;
-    margin-left: 20px;
-    color: #fff867;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  header nav a:hover {
-    color: #e6e2a3;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  
+/* Base styles */
+body {
+  font-family: sans-serif;
+  color: #5a5b6d;
+  background-color: #fff;
+}
 
-  /* Reset styles */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #2c52b3;
+  padding: 20px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fb2f38;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav a {
+  display: inline-block;
+  margin-left: 20px;
+  color: #fff867;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #e6e2a3;
+}
+
+.logo a{
+  color: #fb2f38;
+  text-decoration:none;
+}
+
+
+
+/* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Base styles */
-  body {
-    font-family: sans-serif;
-    color: #5a5b6d;
-    background-color: #fff;
-  }
-  
-  /* Banner */
-  .banner {
-    background-image: url("https://static.bandainamcoent.eu/high/gundam/gundam-versus/00-page-setup/gv_banner.jpg");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .box{
-    background-color: white;
-    padding: 3vh;
+/* Base styles */
+body {
+  font-family: sans-serif;
+  color: #5a5b6d;
+  background-color: #fff;
+}
 
-  }
+/* Banner */
+.banner {
+  background-image: url("https://static.bandainamcoent.eu/high/gundam/gundam-versus/00-page-setup/gv_banner.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
 
-  .banner-text {
-    color: black;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-  }
+.box{
+  background-color: white;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .banner-button {
-    background-color: #00bcd4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    align-self: center;
-    margin: auto;
-  }
-  
+.banner-text {
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 7vw;
-    align-items: center;
-    justify-self: start;  /* align item to the left */
-    align-self: end;  /* align item to the bottom */
-  }
-
-  .gridCollection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    align-items: center;
-    justify-self: start;  /* align item to the left */
-    align-self: end;  /* align item to the bottom */
-  }
-  
-  .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .product img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
-
-  .collection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .collection img {
-    width: 25vw;
-    height: 500px;
-    object-fit: cover;
-  }
-
-  /* .product img:hover {
-    width: 410px;
-    height: 410px;
-    transition: 200ms;
-  } */
-  
-  .price {
-    color: #000000;
-    font-weight: bold;
-  }
-  
+.banner-button {
+  background-color: #2c52b3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
 
 
-  /* Footer */
+.grid {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 7vw;
+  align-items: center;
+  justify-self: start;  
+  align-self: end;
+}
+
+.scrollable {
+  max-height: 90%; /* or any value */
+  overflow-x: auto;
+}
+
+.gridCollection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  align-items: center;
+  justify-self: start;  /* align item to the left */
+  align-self: end;  /* align item to the bottom */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.product img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection img {
+  width: 25vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+h3{
+  text-align: center;
+}
+
+/* .product img:hover {
+  width: 410px;
+  height: 410px;
+  transition: 200ms;
+} */
+
+.price {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+
+/* Footer */
 footer {
-    background-color: #fff867;
-    padding: 20px;
-    color: #5a5b6d;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  footer .social-media {
-    margin-top: 20px;
-  }
-  
-  footer .social-media a {
-    display: inline-block;
-    margin-left: 10px;
-    color: #5a5b6d;
-    font-size: 24px;
-  }
-  
-  footer .social-media a:hover {
-    color: #2c52b3;
-  }
+  background-color: #fff867;
+  padding: 20px;
+  color: #5a5b6d;
+  font-size: 14px;
+  text-align: center;
+}
 
-  .sectionTitles {
-    width: 100vw; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-  }
+footer .social-media {
+  margin-top: 20px;
+}
+
+footer .social-media a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #5a5b6d;
+  font-size: 24px;
+}
+
+footer .social-media a:hover {
+  color: #2c52b3;
+}
+
+.sectionTitles {
+  width: 100%; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+#bar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#bar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+
+}
+
+#bar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2c52b3;
+}
+
+@media (max-width: 800px) {
+
+  header nav a {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+header .logo{
+    font-size:18px;
+}
+}

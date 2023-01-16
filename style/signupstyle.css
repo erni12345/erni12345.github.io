@@ -1,14 +1,17 @@
 
   header {
+    position: absolute;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-color: #2c52b3;
+    width: 100%;
     padding: 20px;
-    width: 100vw;
+    top:0;
+    margin-bottom: 20px;
   }
   
   header .logo {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #fb2f38;
   }
@@ -22,7 +25,7 @@
     margin-left: 20px;
     color: #fff867;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
   }
   
@@ -40,12 +43,13 @@
   
   /* Base styles */
   #page-container {
-    position: relative;
-    min-height: 100vh;
+    height: 98%;
+    width: 100%;
   }
 
   .box-header{
     padding-top: 20px;
+    margin: 0;
 }
 
 h1{
@@ -61,11 +65,9 @@ h1{
     color: #5a5b6d;
     font-size: 14px;
     text-align: center;
-    clear: both;
-    position: relative;
     position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 
   }
@@ -77,30 +79,29 @@ h1{
   }
   
   body {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     font-family: sans-serif;
     color: #5a5b6d;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     height: 100vh;
   }
 
 
   .box-registration{
-    max-width: 550px;
-    margin: 30px auto 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
+    max-width: 700px;
+    margin: 10vh auto 0;
+    padding-left: 1%;
+    padding-right: 1%;
     background-color: #fff;
     display: block;
     border-radius: 20px;
     box-shadow: 1px 2px 5px #ccc;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
   }
 
   .box-registration form .user-details{
@@ -112,7 +113,7 @@ h1{
 
   form .user-details .input-box{
     margin: 20px 0 12px 0;
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 3 - 10px);
     text-align: center;
   }
 
@@ -160,29 +161,34 @@ h1{
     margin: 0 50px;
   }
 
+  .logo a{
+    color: #fb2f38;
+    text-decoration:none;
+  }
+
   input[type="radio"] {
     appearance: none;
-    background-color: rgb(98, 92, 92);
+    background-color: rgb(144, 140, 140);
     margin: 0;
     font: inherit;
-    color: rgb(98, 92, 92);
+    color: rgb(144, 140, 140);
     width: 1em;
     height: 1em;
-    border: 0.1em solid rgb(98, 92, 92);
+    border: 0.1em solid rgb(144, 140, 140);
     border-radius: 50%;
-    transform: translateY(+0.2em);
+    transform: translateY(-2.5px);
   }
   
   input[type="radio"]:checked{
-        background: #4367c3;
+        background: #213566;
         border-radius: 50%;
-        border: 0.15em solid rgb(98, 92, 92);
+        border: 0.2em solid rgb(144, 140, 140);
   }
 
   input[type="radio"]:hover{
-        background: #4367c3;
+        background: #213566;
         border-radius: 50%;
-        border: 0.15em solid rgb(98, 92, 92);
+        border: 0.2em solid rgb(144, 140, 140);
         
     }
 
@@ -202,6 +208,48 @@ h1{
     .background{
         background-image: url("gundamblurred.png");
       }
+
+    textarea{
+      margin-top: 10px;
+      width: 90%;
+      height: 20vh;
+        resize: none;
+        text-align: left;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer {
+      position: absolute;
+      background-color: #fff867;
+      padding: 20px;
+      color: #5a5b6d;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+
+      .box-registration{
+        max-width: 400px;
+        margin-top: 60px auto 0px;
+      }
+
+      form .user-details .input-box{
+        margin: 20px 0 12px 0;
+        width: 80%;
+        text-align: center;
+      }
+    
+      header nav a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+  
+    header .logo{
+        font-size:18px;
+    }
+    }
 
 
 

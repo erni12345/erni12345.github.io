@@ -112,12 +112,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   /* Media query for mobile devices */
   @media (max-width: 900px) {
     .shop-items {
       grid-template-columns: repeat(1, 1fr);
+      margin: auto;
     }
   }
 
@@ -132,7 +135,7 @@
   }
   .shop-item img {
     width: 100%;
-    height: 600px;
+    height: 450px;
     object-fit: cover;
 
   }
@@ -145,34 +148,20 @@
   }
   /* CSS for styling the search bar and category selector */
   .search-container {
-    width: 80%; margin: 0 auto; border: 1px solid #ccc; padding: 24px; text-align: center;
+    width: 65%; margin: 10px auto; border: 1px solid #ccc; padding: 10px; text-align: center;
   }
   .secondSearchContainer
   {
     display: flex; align-items: center; justify-content: center;
   }
   .search-container input[type="text"] {
-    padding: 16px; font-size: 22px; margin-right: 16px; width: 60%;
+    padding: 8px; font-size: 18px; margin-right: 16px; width: 50%;
   }
   .search-container select {
-    padding: 16px; font-size: 22px; margin-right: 16px; width: 30%;
+    padding: 8px; font-size: 18px; margin-right: 16px; width: 20%;
   }
   .search-container button {
-    background-color: #4CAF50; color: white; padding: 16px 32px; font-size: 22px; border: none; cursor: pointer;
-  }
-  /* Media query for mobile devices */
-  @media (max-width: 600px) {
-    /* Change the width and font-size of the elements for smaller screens */
-    div {
-      width: 90%;
-      padding: 16px;
-    }
-    input[type="text"], select, button {
-      width: 100%;
-      font-size: 16px;
-      padding: 8px;
-      margin-bottom: 8px;
-    }
+    background-color: #2c52b3; color: white; padding: 9px 32px; font-size: 18px; border: none; cursor: pointer;
   }
 
 
@@ -211,4 +200,190 @@ footer {
     align-items: center; 
     justify-content: center; 
     text-align: center;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-around;
+    color: #000000;
+    margin: 5px 0;
+  }
+
+  .price{
+    margin-left: 8vw;
+  }
+
+  .checked{
+    color:#ebcf41
+  }
+
+  .unchecked{
+    color: #9d9d9d;
+  }
+
+  .btn-primary {
+    background: #2c52b3;
+}
+
+.btn{
+    margin-top:2px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    position: relative;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 21px;
+}
+
+
+.btn:hover{
+    background-color:#315ac2;
+}
+
+.items-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.filters{
+    width: 20vw;
+    background-color: #ffffff;
+    margin: 5px 10px 0 10px;
+}
+
+div.stitle{
+    text-align: center;
+    font-weight: bold;
+    color:#2c52b3;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.sellers{
+    height: 95px;
+    box-shadow: 1px 2px 5px rgb(182, 180, 180);
+}
+
+div input{
+    padding: 0;
+}
+
+.chckbx{
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 1vwpx;
+}
+
+.stars{
+    height: 160px;
+    box-shadow: 1px 2px 5px rgb(182, 180, 180);
+    margin-top: 15px;
+}
+
+.number-reviews{
+    height: 140px;
+    box-shadow: 1px 2px 5px rgb(182, 180, 180);
+    margin-top: 15px;
+}
+
+.price-range{
+    height: 80px;
+    box-shadow: 1px 2px 5px rgb(182, 180, 180);
+    margin-top: 15px;
+}
+
+.minprice{
+    width: 25%;
+}
+
+.maxprice{
+    width: 25%;
+}
+
+.title-filters{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+
+    .price{
+        margin-left: 13vw;
+      }
+
+    .items-filters {
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 0;
+    }
+    .filters{
+        width: 80vw;
+        background-color: #ffffff;
+        margin: 10px auto;
+    }
+
+    .entry{
+        padding: 0;
+        margin-top: 4px;
+    }
+
+    .stitle{
+        padding: 0;
+    }
+
+    div.sellers{
+        padding: 0;
+    }
+
+    .price-range{
+        padding: 0;
+    }
+
+    div.stars{
+        padding: 0;
+    }
+
+    div.number-reviews{
+        padding: 0;
+    }
+
+    .search-container {
+        width: 90%; margin: 10px auto; border: 1px solid #ccc; padding: 5px; text-align: center;
+      }
+      .secondSearchContainer
+      {
+        display: flex; align-items: center; justify-content: center; margin: 0;
+      }
+      .search-container input[type="text"] {
+        padding: 5px; font-size: 12px; margin-right: 16px; width: 40%;
+      }
+      .search-container select {
+        padding: 6px; font-size: 10px; margin-right: 16px; width: 40%;
+      }
+      .search-container button {
+        background-color: #2c52b3; color: white; padding: 4px 0px; font-size: 12px; border: none; cursor: pointer;
+      }
+
+      input[type="text"], select, button {
+        width: 20%;
+        font-size: 16px;
+        padding: 8px;
+      }
+
+      header nav a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+  
+    header .logo{
+        font-size:18px;
+    }
+    
   }

@@ -10,6 +10,11 @@ body {
     background-color: #2c52b3;
     padding: 20px;
   }
+
+  .logo a{
+    color: #fb2f38;
+    text-decoration:none;
+   }
   
   header .logo {
     font-size: 24px;

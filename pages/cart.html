@@ -5,33 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Shopping Cart</title>
     <link href='https://css.gg/trash.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="../style/cartstyle.css" />
+    <link rel="stylesheet" type="text/css" href="cartstyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
-<body class="##">
+<body>
     <div id="page-container">
-    <!-- <header>
-        <div class="logo">DelftGunpla.com</div>
-        <nav>
-          <a href="cart.html">Cart</a>
-          <a href="#">Shop</a>
-          <a href="#">Sell</a>
-          <a href="signin.html">Sign in</a>
-        </nav>
-    </header> -->
+        <header>
+            <div class="logo"><a href="index.html">DelftGunpla.com</a></div>
+            <nav>
+                <a href="cart.html">Cart</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Sell</a>
+                <a href="signin.html">Sign in</a>
+                <a href="index.html">Home</a>
+                <a href="datapage.html">Profile</a>
+            </nav>
+        </header>
 
     <div class="main-box">
-
-            <div class="header"> 
-                <header>
-                    <div class="logo">Shopping Cart</div>
-                </header>
-            </div>
-        
+            
+            <div class="content-container">
             <div class="items-in">
                 <div class="items-block scrollable" id="bar">
                 <div class="item">
@@ -91,7 +88,7 @@
                             <span>Quantity</span>
                             <form><input type="number" id="amount" name = "amount" step = "1" value="1"></form>
                         </div>
-                        <form action="submit.html" method="POST" class="group">
+                        <form action="submit.html" method="POST">
                             <button class="btn trash">Remove item</button>
                             <div class="price">
                                 Price: 29.50$
@@ -113,7 +110,7 @@
                             <span>Quantity</span>
                             <form><input type="number" id="amount" name = "amount" step = "1" value="1"></form>
                         </div>
-                        <form action="submit.html" method="POST">
+                        <form action="submit.html" method="POST" class="align">
                             <button class="btn trash">Remove item</button>
                             <div class="price">
                                 Price: 29.50$
@@ -170,16 +167,17 @@
     </div>
         </div>   
             </div>
+        </div>
 
-            <div class="footer"> 
+            <!-- <div class="footer"> 
                 Copyright 2021 - Delft Gundam
-            </div>
+            </div> -->
 
     </div>
 
-    <!-- <footer>
+    <footer>
         <p>Copyright 2021 - Delft Gundam</p>
-      </footer> -->
+      </footer>
 
     </div>
 

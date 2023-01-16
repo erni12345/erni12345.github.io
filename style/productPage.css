@@ -110,6 +110,14 @@ body {
     margin-bottom: 10px;
   }
 
+  .checked{
+    color:#ebcf41
+  }
+
+  .unchecked{
+    color: #9d9d9d;
+  }
+
   .comment-date {
     font-size: 14px;
     font-style: italic;

@@ -36,6 +36,11 @@
     color: #fb2f38;
     text-decoration:none;
   }
+
+  .btn a{
+    color: #ffffff;
+    text-decoration:none;
+  }
   
   header nav a:hover {
     color: #e6e2a3;

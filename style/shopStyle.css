@@ -250,6 +250,7 @@ footer {
 
 .filters{
     width: 20vw;
+    min-width: 200px;
     background-color: #ffffff;
     margin: 5px 10px 0 10px;
 }
@@ -264,9 +265,14 @@ div.stitle{
 }
 
 .sellers{
-    height: 95px;
+    height: 100px;
     box-shadow: 1px 2px 5px rgb(182, 180, 180);
 }
+
+.logo a{
+    color: #fb2f38;
+    text-decoration:none;
+  }
 
 div input{
     padding: 0;
@@ -275,23 +281,23 @@ div input{
 .chckbx{
     margin-left: 5px;
     margin-top: 4px;
-    font-size: 1vwpx;
+    font-size: 16px;
 }
 
 .stars{
-    height: 160px;
+    height: 170px;
     box-shadow: 1px 2px 5px rgb(182, 180, 180);
     margin-top: 15px;
 }
 
 .number-reviews{
-    height: 140px;
+    height: 150px;
     box-shadow: 1px 2px 5px rgb(182, 180, 180);
     margin-top: 15px;
 }
 
 .price-range{
-    height: 80px;
+    height: 90px;
     box-shadow: 1px 2px 5px rgb(182, 180, 180);
     margin-top: 15px;
 }
@@ -377,7 +383,7 @@ div input{
         padding: 8px;
       }
 
-      header nav a {
+            header nav a {
         font-size: 12px;
         margin-left: 5px;
     }

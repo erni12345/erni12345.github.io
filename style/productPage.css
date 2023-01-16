@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    color: #5a5b6d;
+    background-color: #fff;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #2c52b3;
+    padding: 20px;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fb2f38;
+  }
+  
+  header nav {
+    margin-left: auto;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff867;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    color: #e6e2a3;
+  }
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .product-image {
+    width: auto;
+    padding: 20px;
+    height: 60%;
+  }
+
+  .product-image img {
+    height: 60%;
+    width: auto;
+    }
+
+  .product-info {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product-seller {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .comment-section {
+    overflow-y: scroll;
+    max-height: 300px;
+    margin-top: 20px;
+  }
+
+  .comment-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+
+  .comment-username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .comment-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .comment-stars {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .comment-date {
+    font-size: 14px;
+    font-style: italic;
+  }

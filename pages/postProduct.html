@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            color: #5a5b6d;
+            background-color: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #2c52b3;
+            padding: 20px;
+        }
+        
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fb2f38;
+        }
+        
+        header nav {
+            margin-left: auto;
+        }
+        
+        header nav a {
+            display: inline-block;
+            margin-left: 20px;
+            color: #fff867;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        header nav a:hover {
+            color: #e6e2a3;
+        }
+    
+      .container {
+        width: 80%;
+        height: 70%;
+        outline: 1px solid #ccc;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8)); */
+        background-color: #fff867;
+        margin-top: 10vh;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="file"] {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        background-color: #f8f8f8;
+        font-size: 16px;
+      }
+      textarea {
+        width: 80%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+      input[type="submit"] {
+        width: 80%;
+        background-color: #fb2f38;
+        color: white;
+        padding: 14px 20px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #eb7379;
+      }
+
+      select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        background-color: #f8f8f8;
+        font-size: 16px;
+      } 
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <div class="logo">DelftGunpla.com</div>
+        <nav>
+          <a href="cart.html">Cart</a>
+          <a href="shop.html">Shop</a>
+          <a href="postProduct.html">Sell</a>
+          <a href="signin.html">Sign in</a>
+          <a href="home.html">Home</a>
+        </nav>
+      </header>
+    
+    <div class="container">
+        <h1>Sell New Product</h1>
+      <form>
+        <input type="file" name="image" accept="image/*" required>
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="description" placeholder="Description" required></textarea>
+        <input type="number" name="price" placeholder="Price" required>
+        <select name="category">
+          <option value="" disabled selected>Select Category</option>
+          <option value="High Grade">High Grade</option>
+          <option value="Real Grade">Real Grade</option>
+          <option value="SD">SD</option>
+          <option value="Master Grade">Master Grade</option>
+          <option value="Perfect Grade">Perfect Grade</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="submit" value="Upload">
+      </form>
+    </div>
+  </body>
+</html>

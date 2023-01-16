@@ -260,6 +260,13 @@ div.info{
     padding-top: 2vh;
     padding-left: 1vw;
     padding-bottom: 2vh;
+    display: flex;
+}
+
+textarea{
+  width: 35vw;
+  height: 20vh;
+  resize: none;
 }
 
 .sbmt{

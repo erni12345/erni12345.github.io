@@ -25,12 +25,25 @@
                 <a href="datapage.html">Profile</a>
             </nav>
         </header>
-
+    
+    <div style="width: 100vw; height: 100vh; position: absolute; top : 50%; -ms-transform: translateY(-20%); transform: translateY(-20%); pointer-events:none;">
+        <div id="hiddenDiv" style="display: none; background-color: aliceblue; width: 400px; border-radius: 10px; height: 300px; font-size: large; align-items: center; text-align: center;">
+            <!-- <ul>
+                <li id="mouseClicks">Number of mouse clicks: 11</li>
+                <li id="time">Total time spent: 3 minutes and 3 seconds</li>
+                <li id="keyP">Total key presses: 17</li>
+                <li id="charTyped">Total number of characters typed: 71</li>
+            </ul> -->
+            <p id="text">
+                
+            </p>
+        </div>
+    </div>
     <div class="box-registration">
         
         <div class="content">
             <h1 class="box-header">Registration</h1>
-            <form action="home.html" type="post">
+            <form id="form" action="home.html" type="post">
             <div class="user-details">
             <div class="input-box">
                 <span class="details">Username</span>
@@ -118,8 +131,12 @@
 
     </div>
 
+    
+    
+
 
 
     </div>
+    <script type="text/javascript" src="../scripts/tracker.js"></script>
 
 </body>

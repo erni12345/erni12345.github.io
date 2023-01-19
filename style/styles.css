@@ -47,7 +47,10 @@ header nav a:hover {
   text-decoration:none;
 }
 
-
+.banner-button a{
+  text-decoration:none;
+  color: #fff;
+}
 
 /* Reset styles */
 * {

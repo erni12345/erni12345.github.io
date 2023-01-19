@@ -36,6 +36,11 @@
     color: #fb2f38;
     text-decoration:none;
   }
+
+  .btn a{
+    color: #ffffff;
+    text-decoration:none;
+  }
   
   header nav a:hover {
     color: #e6e2a3;
@@ -255,6 +260,13 @@ div.info{
     padding-top: 2vh;
     padding-left: 1vw;
     padding-bottom: 2vh;
+    display: flex;
+}
+
+textarea{
+  width: 35vw;
+  height: 20vh;
+  resize: none;
 }
 
 .sbmt{
@@ -290,6 +302,16 @@ div.info{
 }
 
 @media (max-width: 800px) {
+	
+textarea{
+    width: 40vw;
+    height: 20vh;
+    resize: none;
+  }
+
+  input{
+    width: 30vw;
+  }
 
     .center-box{
         margin-top: 50px;
